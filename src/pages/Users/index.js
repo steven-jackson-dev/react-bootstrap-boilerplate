@@ -20,7 +20,7 @@ const Users = () => {
         <section className="Users" style={{ textAlign: 'center', margin: '2em 0' }}>
             <h2>Users Page</h2>
             <Row>
-                {!users && <div>Loading</div>}
+                {!users && <div className="text-center">Loading</div>}
                 {(users.length > 0) &&
                     users.map(user => { return <Col key={user.id} xs={6} md={4}><UserItem user={user} /></Col> })
                 }
